@@ -1,0 +1,206 @@
+section {
+    background-color: #0b0d18;
+}
+.gallery-container {
+    height: 1416px;
+    overflow-y: auto;
+    direction: ltr;
+}
+@media (min-width: 1200px) {
+    .gallery-container {
+        max-width: 1700px;
+}
+}
+body {
+    background-color: #0b0d18;
+}
+.parentofRadio {
+    -webkit-box-shadow: 0px 5px 20px -9px rgb(102 102 102 / .5);
+    box-shadow: 0px 5px 20px -9px rgb(102 102 102 / .5);
+    padding: 5px;
+    border: 1px solid rgb(102 102 102 / .6);
+    background-color: rgb(0 0 0 / 0.35);
+    border-radius: 10px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    direction: rtl;
+}
+.btn-bgColor {
+    position: relative !important;
+    color: #eeeeeef2;
+    direction: rtl;
+    overflow: hidden;
+    font-size: 13px;
+    font-family: 'Lemonada', cursive;
+}
+.btn-bgColor:hover {
+    color:#a6a6a6;
+}
+.btn-bgColor:active {
+    color:#666;
+}
+/* start animation from stackOverFlow */
+.btn-bgColor:before, .btn-bgColor:after {
+    display:block;
+    width:100%;
+    content:'';
+    position:absolute;
+    height:0px;
+    border-radius:3px;
+}
+.btn-bgColor:before {
+    border-top: 1px solid #ffffffd9;
+    z-index: 2;
+/*    border-right: 1px solid #fff9;*/
+    left: -100%;
+    top: 0;
+    height: 0px;
+}
+.btn-bgColor:after {
+    border-bottom: 1px solid #ffffffd9;
+/*    border-left: 1px solid #fff9;*/
+    left: 100%;
+    bottom: 0;
+    height: 0px;
+}
+.btn-bgColor.active {
+    border-top: 1px solid #ffffffd9;
+    border-bottom: 1px solid #ffffffd9;
+}
+.Roption {
+    border-left: 1px solid #666666;
+}
+.Loption {
+    border-right: 1px solid #666666;
+}
+.gallery-box {
+    width: 300px;
+    height: 380px;
+    display: inline-block;
+    overflow: hidden;
+    margin: 10px ;
+    position: relative;
+    border-radius: 8px;
+    color: #eaeaea;
+    background-color: #0d1125;
+    border: 1px solid #303039;
+    transition: all .2s ease-in-out;
+}
+
+.gallery-box:hover {
+    -webkit-box-shadow: 0px 5px 21px 4px #666666;
+    box-shadow: 0px 5px 21px 4px #666666;
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+/* start animation from stackOverFlow */
+.gallery-box:before, .gallery-box:after {
+    display:block;
+    width:100%;
+    content:'';
+/*    border: 2px solid #000;*/
+    position:absolute;
+    height:0px;
+    border-radius:0px;
+}
+.gallery-box:before {
+    border-top: 3px solid #ffffff;
+    z-index: 2;
+/*    border-right: 4.5px solid #ffffff;*/
+    left: -100%;
+    top: 0;
+    height: 0px;
+}
+.gallery-box:after {
+    border-bottom: 3px solid #ffffff;
+/*    border-left: 4.5px solid #ffffff;*/
+    left: 100%;
+    bottom: 0;
+    height: 0px;
+}
+@-webkit-keyframes left-up {
+    0% {
+        left:100%;
+        height:0;
+    }
+    50% {
+        left:0;
+        height:0;
+    }
+    100% {
+        height:100%;
+        left:0;
+    }
+}
+@-webkit-keyframes right-dn {
+    0% {
+        left:-100%;
+        height:0;
+    }
+    50% {
+        left:0;
+        height:0;
+    }
+    100% {
+        height:100%;
+        left:0;
+    }
+}
+.gallery-box:hover:after, .gallery-box:hover:before , .btn-bgColor:hover:after , .btn-bgColor:hover:before {
+    -webkit-animation-duration: 850ms;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+}
+.btn-bgColor:hover:after , .btn-bgColor:hover:before {
+    -webkit-animation-duration: 600ms !important;
+}
+.gallery-box:hover:after , .btn-bgColor:hover:after {
+    -webkit-animation-name:left-up;
+    animation-name:left-up;
+}
+.gallery-box:hover:before , .btn-bgColor:hover:before {
+    -webkit-animation-name:right-dn;
+    animation-name:right-dn;
+}
+
+/* end animation from StackOverFlow */
+
+.gallery-img-parent {
+    height: 65%;
+    object-fit: contain;
+    position: relative;
+}
+.gallery-category {
+    position: absolute;
+    background-color: rgb(234 234 234 / .6);
+    right: -10px;
+    border: 1px solid rgb(234 234 234 / 0.2);
+    top: -6px;
+    font-size: 11px;
+    color: #000000;
+}
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #303039;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+}
+.gallery-dec-parent {
+    position: relative;
+    margin-top:25px;
+}
+.gallery-dec-parent > p {
+    font-family: 'Lemonada', cursive;
+    font-size: 15px;
+    text-shadow: 0px 0px 10px black;
+}
+.gallery-dec-parent > span {
+    color: #666666;
+    display: block;
+    text-align: center;
+    padding-top: 3px;
+}
+
+

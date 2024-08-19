@@ -1,0 +1,362 @@
+.Main-add-images {
+    overflow: hidden;
+    padding: 0px 0px 100px 0px;
+    position: relative;
+}
+.large-header {
+    margin-top: 30px;
+    width: 350px !important;
+}
+.large-header:before, .large-header:after {
+    right: 126px !important;
+}
+.large-header:before {
+    width: 95px !important;
+}
+.large-header:after {
+    width: 52px !important;
+    right: 146px !important;
+}
+.Title-header {
+    color:#c5c5c5 !important;
+}
+.drag-upload-icon {
+    font-size:52px;
+    display:block;
+}
+.ext-ul {
+    height: 100%;
+    padding:0;
+    background: linear-gradient(to bottom, #0b0d18,#06070f);
+    margin:0;
+}
+.ext-ul .ext-li {
+    display: inline-block;
+    color: #FFF;
+    list-style: none;
+    font-size: 19px;
+    font-weight: bold;
+    padding: 24px;
+    text-align: center;
+    height: 100%;
+    border: 2px dashed #333;
+    border-top: none;
+    border-bottom: none;
+}
+/* upload start */
+.upload-cont {
+    width: 880px;
+    height: 323px;
+    border: 2px dashed #333;
+    margin-bottom: 14px !important;
+}
+.upload-cont .upload-header {
+    border-bottom:2px dashed #333;
+    height: 27%;
+}
+.upload-cont .upload-body {}
+
+.upload-cont .upload-body .upload-body-cont {
+    margin: 62px auto 0px;
+    width: 100px;
+    text-align: center;
+
+}
+.upload-text {
+    text-align: center;
+    color: #666;
+    margin-top: 8px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.input-div {
+    position: relative;
+    width: 550px;
+    margin: auto;
+}
+.link-span{
+    position: relative;
+    left: -83px;
+    color: #c3c3c3;
+    bottom: 11px;
+    font-size: 13px;
+    font-family: 'Cairo';
+    display: inline-block;
+    text-transform: capitalize;
+}
+.input-space:focus {
+    outline: none !important;
+    box-shadow: inset 0px 0px 3px 1.5px #000;
+}
+
+
+/* upload end */
+/* images */
+.dragDropParent {
+    overflow-y: auto;
+    height: 553px;
+    direction: ltr;
+}
+.dragDropParent::-webkit-scrollbar-thumb {
+    background: #909090;
+    border-radius: 15px;
+    transition: all .3s ease-in-out;
+}
+.dragDropParent::-webkit-scrollbar-thumb:hover {
+    background:#5e5e5e;
+}
+.dragDropParent::-webkit-scrollbar-track{
+    background: rgb(13 17 37);
+}
+#drag-and-drop-zone {
+    /* border: 2px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 20px; */
+}
+
+#drag-and-drop-zone h3 {
+    margin: 0 0 20px 0;
+    font-size: 16px;
+    color: #666;
+}
+
+#drag-and-drop-zone .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #444;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#drag-and-drop-zone .btn:hover {
+    background-color: #666;
+}
+
+#drag-and-drop-zone.dragging {
+    /* border-color: #aaa;
+    background-color: #f7f7f7; */
+    border: 3px dashed #ccc;
+}
+
+#drag-and-drop-zone input[type="file"] {
+    display: none;
+}
+.hold {
+  border: 3px solid #ccc;
+}
+.hovered {
+    background: #070810;
+    border: 3px dashed #303039;
+}
+
+.images-uploaded-cont {
+    position: relative;
+    width: 24%;
+    height: 476px;
+    margin: 10px 10px 40px;
+    display: inline-block;
+    color: #EEE;
+    border: 1px solid #333;
+    box-shadow: 0px 0px 20px 0px #040404;
+}
+.images-uploaded-header {
+    position: relative;
+    width: 100%;
+    border-bottom: inherit;
+    height: 265px;
+}
+.images-uploaded-img {
+    height: 100%;
+    width: 100%;
+}
+iframe.images-uploaded-img {
+    border: none;
+}
+.images-span-icon-image-title {
+    position: absolute;
+    top: 3px;
+    font-size: 15px;
+    left: 5px;
+}
+.images-span-icon-image {
+    font-size: 13px;
+}
+.images-span-title {
+    font-size: 15px;
+    text-shadow: 0px 0px 11px #000;
+    margin-left: 2px;
+}
+.images-span-icon {
+    position: absolute;
+    cursor: pointer;
+    top: 1px;
+    right: 6px;
+    color: #ee322c;
+    font-size: 17px;
+}
+.section-titles {
+    padding: 37px 10px 10px 10px;
+    direction: ltr;
+    background: rgb(0 0 0 / 0.35);
+    box-shadow: inset 0px 1px 6px 0px #000;
+}
+.textarea-space {
+    width: 285px;
+    padding-left: 5px;
+    resize: none;
+    height: 64px;
+}
+.select-cont { /* go to line 84 if u want edit the select box */
+    direction: ltr;
+    width: 82%;
+    height: 45px;
+    outline: none !important;
+    background-color: rgb(0 0 0 / 0.35);
+    color: #eee;
+    font-family: 'Cairo';
+    border-radius: 9px;
+    font-size: 16px;
+    border: 1px solid #292626;
+    box-shadow: inset 0px 0px 0px 1px #000;
+    transition: all .5s ease-in-out;
+}
+
+
+select option {
+    background-color: rgb(7 7 14);
+    font-family: 'Cairo';
+    font-size:14px;
+}
+
+select option:checked {
+    text-decoration:underline;
+    font-weight: bold;
+}
+.Big-button {
+    display: block;
+    cursor: pointer;
+    font-weight: bold;
+    height: 64px !important;
+    margin: 0px auto 7px;
+    width: 400px !important;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 3px 1px #000;
+    outline: none;
+    transition: all .1s ease-in-out;
+
+}
+
+.f-button {
+    margin-top: 35px;
+    background-color: rgb(249 249 249 / .68) !important;
+    color: #101010 !important;
+    -webkit-box-shadow: 0px 0px 7px 0px rgb(249 249 249 / .68) !important;
+    box-shadow: 0px 0px 7px 0px rgb(249 249 249 / .68) !important;
+    border: 1px solid #484848 !important;
+}
+
+.f-button:hover {
+    background-color: rgb(249 249 249 / .5) !important;
+    box-shadow: none !important;
+}
+.f-button:active {
+    background-color: rgb(249 249 249 / .4) !important;
+    color: #2f2f2f !important;
+    box-shadow: none !important;
+}
+.s-button {
+    background-color: #049a24 !important;
+    color: #101010 !important;
+    -webkit-box-shadow: 0px 0px 7px 0px #2a8519 !important;
+    box-shadow: 0px 0px 7px 0px #2a8519 !important;
+    border: 1px solid #484848 !important;
+}
+.s-button:hover {
+    background-color: #037f1d !important;
+    box-shadow: none !important;
+}
+.s-button:active {
+    background-color: #036618 !important;
+    color: #2f2f2f !important;
+    box-shadow: none !important;
+
+}
+@media (max-width:632px) {
+    .f-button , .s-button {
+        width:50% !important;
+    }
+}
+@media (max-width:717px) {
+    .images-uploaded-cont {
+        margin: 10px auto;
+        width: 100%
+    }
+    .imgs-parent {
+        border:1px solid #333;
+        overflow-x: hidden;
+    }
+    .textarea-space {
+        width:100%;
+    }
+    .select-cont {
+        width:100%;
+    }
+    .input-div , .input-space {
+        width:100%;
+    }
+}
+@media (max-width:769px) {
+    .ext-li:first-of-type {
+        border-bottom: 2px dashed #333;
+    }
+    .ext-li:nth-of-type(2) {
+        border-bottom: 2px dashed #333;
+    }
+    .ext-li:nth-of-type(3) {
+        border-right: none;
+    }
+    .upload-cont {
+        height: 550px;
+    }
+}
+@media (max-width: 1127px) {
+    .Main-add-images {
+        padding: 30px;
+    }
+    .big-cont {
+        padding: 30px;
+        border-radius: 24px;
+    }
+}
+@media (max-width:1123px){
+    .upload-cont {
+        width: 100%;
+    }
+    .upload-cont .upload-header {
+        height:auto;
+    }
+}
+/* code from https://github.com/danielm/uploader Gratefully */
+/*
+	A couple styles to make the demo page look good
+ */
+
+.dm-uploader.active {
+    border: 1px solid #666;
+}
+.dm-uploader{cursor:default;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.dm-uploader .btn{position:relative;overflow:hidden}.dm-uploader .btn input[type=file]{position:absolute;top:0;right:0;margin:0;border:solid transparent;width:100%;opacity:0;cursor:pointer;}
+.dm-uploader {
+    height: auto;    padding: 57px;
+}
+.dm-uploader > div {
+    cursor: pointer;
+}
+.btn-outline-dark:hover {
+    background-color: #1c1f22 !important;
+}
+/* -------------- */

@@ -61,7 +61,7 @@
 
 
                     <div id="drag-and-drop-zone" class="dm-uploader text-center">
-                        <h3 class="mb-5 text-muted">Drag &amp; drop files here</h3>
+                        <h3 class="mb-5 text-muted">Drag Or drop files here</h3>
 
                         <div class="btn btn-outline-dark text-white">
                             <span>Open the file Browser</span>

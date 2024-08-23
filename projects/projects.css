@@ -1,6 +1,3 @@
-body {
-  background-color: #0d1125;
-}
 .Main-projects {
     overflow: hidden;
     background-color: #0b0d18;
@@ -60,32 +57,55 @@ body {
 
 
 .image-big-Square-title-real-title {
-    color: #f9f9f9;
-    text-shadow: 0 0 1px #000000;
+  color: #f9f9f9;
+  text-shadow: 0 0 1px #000000;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: monospace;
 }
 .image-slidersCount {
-    position: absolute;
-    left: 9px;
-    color: #f9f9f9;
-    text-shadow: 0 0 1px #000000;
-    font-weight: bold;
+  position: absolute;
+  left: 9px;
+  z-index: 111;
+  color: #f9f9f9;
+  text-shadow: 0 0 1px #000000;
+  font-weight: bold;
 }
 .Slider-Container {
   width:100%;
 }
-.Anim-image {
-    position: absolute;
-    opacity: 0;
-    transition: opacity .5s;
-    float:left;
-    z-index: 2;
-    width: 100%;
-    right:0;
-    object-fit: contain;
-    border-radius: 14px;
+.full-width {
+  position: absolute;
+  opacity: 0;
+  display:none;
+  visibility: hidden;
+  border: none;
+  transition: all .2s ease-in-out;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  object-fit: contain;
+  border-radius: 14px;
 }
-.Anim-image.active {
+.vertically {
+  position: absolute;
+  opacity: 0;
+  display: none;
+  visibility: hidden;
+  transition: all .5s ease-in-out;
+  z-index: 2;
+  width: 50%;
+  right: 25%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 14px;
+}
+.full-width.selected , .vertically.selected {
     opacity: 1;
+    display: block;
+    visibility: visible;
 }
 .right-arrow-sliders ,.left-arrow-sliders {
     position: absolute;
@@ -122,7 +142,7 @@ body {
   color: #aeaeae;
 }
 .disabledButton {
-  color: #8b8b8bbd;  
+  color: #8b8b8bbd;
   cursor: no-drop;
 }
 .disabledButton:hover , .disabledButton:active {
@@ -150,8 +170,13 @@ body {
   margin-bottom: 13px;
   margin-right: 29px;
   opacity: .55;
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
-  transition: opacity .5s;
+}
+.MultipleImages > .container-MultipleImages > .container-MultipleImages-parent:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+  opacity: 1;
 }
 .MultipleImages > .container-MultipleImages > .container-MultipleImages-parent.active {
  opacity: 1;
@@ -172,6 +197,13 @@ body {
 .MultipleImages > .container-MultipleImages > .container-MultipleImages-parent > img {
   width: inherit;
   height: inherit;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+.MultipleImages > .container-MultipleImages > .container-MultipleImages-parent > iframe {
+  width:144px;
+  height:inherit;
+  vertical-align: middle;
   border-radius: 5px;
 }
 .img-Shadow-projects-page {
@@ -208,35 +240,49 @@ body {
 .more-designs-show {
     margin-bottom: 0px;
     padding: 6px;
+    padding-bottom:3.5%;
+    display: flex;
+    align-items: center;
     background-color: rgb(8 9 16 / .35);
+    justify-content: center;
 }
 
 .design-container {
-    display: inline-block;
-    height: 159px;
+    height: 344px;
     border: 1px solid #303039;
     border-radius: 7px;
+    display: flex;
+    overflow: hidden;
     margin: 10px 13px;
-    width: 15.1%;
+    object-fit: cover;
+    width: 10%;
     position: relative;
     cursor: pointer;
+    justify-content: space-between;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    flex-direction: row;
+    transition:all .3s ease-in-out;
 }
-
+.design-container:hover {
+    transform: translateY(-10px);
+}
 .design-container > img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
   border-radius: 5px;
 }
 .design-shadow-box {
-    opacity: 0;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background: linear-gradient(to bottom, rgb(34 34 34 / .2), #202020 155%);
-    width: 100%;
-    height: 100%;
-    transition: opacity .3s ease-in-out;
+  opacity: 0;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: #0000007d;
+  width: 100%;
+  height: 100%;
+  transition: opacity .3s ease-in-out;
 }
 .design-shadow-box:hover {
   opacity: 1;
@@ -254,8 +300,9 @@ body {
     text-align: center;
 }
 .real-design-shadow-text {
-    font-size: 18px;
+    font-size: 23px;
     overflow-wrap: break-word;
+    line-height: 9;
     color: #fff;
     text-shadow: 0 0 3px black;
     font-weight: 100;

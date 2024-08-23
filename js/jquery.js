@@ -212,7 +212,7 @@ $(document).ready(function() {
   typeEffect(headerElement, spanElement, texts, 150, 6000, 150);
 });
 // end typing
-// start follow moust effect
+// start follow mouse effect
 $(document).ready(function() {
   var $cube = $('.thecube');
 

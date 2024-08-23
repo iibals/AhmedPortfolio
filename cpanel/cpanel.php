@@ -11,7 +11,7 @@
           <div data-file="upload.php" class="remote" id="upload">Upload</div>
           <div data-file="manage.php" class="remote" id="mng">Manage</div>
           <section class="container-fluid text-center text-white p-0 Section-login" id="fileDisplay">
-            <?php include "upload.php" ?>
+            <?php include "inputs.php" ?>
           </section>
           </div>
         </div>

@@ -7,9 +7,9 @@
             <h3 class="large-header text-white text-center mb-5" style="width:233px"> JquerySlider</h3>
           <div class="d-flex justify-content-center">
 
-            <button class="facebook-button"><span>Share</span> <i class="fab fa-facebook-f"></i></button>
+            <button class="facebook-button"> <i class="fab fa-facebook-f"></i><span> Share</span> </button>
 
-            <button class="twitter-button"><span>Tweet</span> <i class="fab fa-twitter"></i></button>
+            <button class="twitter-button"><i class="fab fa-twitter"></i><span> Tweet</span> </button>
 
                 </div>
           <section class="image-big-Square text-center" >
@@ -35,9 +35,9 @@
               <!-- Slider Item 3 -->
               <div class="slider-item">
                 <header class="image-big-Square-title">
-                  <span class="image-big-Square-title-real-title h4"></span>
+                  <span id="sliderHeader" class="image-big-Square-title-real-title h4"></span>
                 </header>
-                <iframe class="full-width" src="https://www.youtube.com/embed/pIPGctnmTsI" allow="autoplay; fullscreen" allowfullscreen alt="TestVideo"></iframe>
+                <iframe class="full-width" src="https://www.youtube.com/embed/yxUyaHcqwrA" allow="autoplay; fullscreen" allowfullscreen alt="TestVideo"></iframe>
               </div>
 
               <!-- Repeat for other items -->

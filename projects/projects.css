@@ -44,17 +44,12 @@
     padding: 9px;
     z-index: 10;
     color: #fff;
-    background: linear-gradient(to bottom, #00000099, #00000066, 50%, #00000000 75%);
     position: absolute;
     top: 0;
     width: 100%;
     left: 0;
     transition: background .3s linear;
 }
-.image-big-Square-title:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
 
 .image-big-Square-title-real-title {
   color: #f9f9f9;
@@ -66,8 +61,9 @@
 }
 .image-slidersCount {
   position: absolute;
-  left: 9px;
+  left: 50%;
   z-index: 111;
+  bottom: 0;
   color: #f9f9f9;
   text-shadow: 0 0 1px #000000;
   font-weight: bold;
@@ -110,44 +106,35 @@
 .right-arrow-sliders ,.left-arrow-sliders {
     position: absolute;
     top: 47%;
-    width: 28px;
+    width: 79px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 36px;
+    transform: rotateY(42deg);
     line-height: 2.1;
     z-index: 10;
     color: #eee;
     border-radius: 5px;
-    background-color: rgb(64 64 64 / .8);
-    border: 1px solid #303039 !important;
     transition: all .2s ease-in-out;
 }
 .right-arrow-sliders {
-    right: -10px;
-    -webkit-box-shadow: 0px 0px 3px 1px #1c1c1c;
-    box-shadow: 0px 0px 3px 1px #1c1c1c;
+    right: -54px;
 }
 .left-arrow-sliders {
-    left: -10px;
-    -webkit-box-shadow: 0px 0px 3px 1px #1c1c1c;
-    box-shadow: 0px 0px 3px 1px #1c1c1c;
+    left: -54px;
 }
 .right-arrow-sliders:hover , .left-arrow-sliders:hover {
-  background-color: #2d2d2d;
-  border-color: #2d2d2d;
   color: #c1c1c1;
 }
 .right-arrow-sliders:active , .left-arrow-sliders:active {
-  background-color: #1c1c1c;
-  border-color: #1c1c1c;
   color: #aeaeae;
 }
 .disabledButton {
-  color: #8b8b8bbd;
+  color: #8b8b8bbd !important;
   cursor: no-drop;
 }
 .disabledButton:hover , .disabledButton:active {
- background-color: #414141 !important;
- color: #9b9b9b !important;
+ /* background-color: #414141 !important; */
+ /* color: #9b9b9b !important; */
 }
 .MultipleImages {
 
@@ -233,6 +220,10 @@
     text-shadow: 0 0 3px black;
     line-height: 1;
     font-weight: normal;
+}
+/* YouTube thumb edits */
+iframe.ytp-chrome-top.ytp-show-cards-title, iframe.ytp-large-play-button, iframe.ytp-gradient-top {
+    display: none !important;
 }
 .other-images {
     padding: 40px 0 0px 0;

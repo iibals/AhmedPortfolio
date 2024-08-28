@@ -1,77 +1,52 @@
 <?php
-    include "headElm.php";
+    include "config.php";
  ?>
 
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark navColor">
-
-      <div class="container-fluid">
-
-           <!-- <a class="navbar-brand font-weight-bold  text-right " href="#">
-              <img src="images/javaImage.jpg" class="img-thumbnail header-image" alt="WebSite image"/>
-          </a> -->
-
-          <!-- button toggle for small screens -->
-          <button class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarColor02"
-                aria-controls="navbarColor02"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-          </button>
-
-
-
-          <!-- button toggle for small screens -->
-
-
-
-        <div class="navbar-collapse font-weight-bold collapse" id="navbarColor02">
-
-
-          <div class="container ">
-
-              <ul class="navbar-nav ml-auto p-0">
-                <li class="nav-item" id="L1">
-                  <a class="nav-link one">Home </a>
-                </li>
-
-                <li class="nav-item"> <!-- will be active after click it -->
-                  <a class="nav-link Tow" id="L2">Services</a>
-                </li>
-
-                <li class="nav-item ">
-                  <a class="nav-link Three" id="L3">About Me</a>
-                </li>
-
-                <li class="nav-item" >
-                  <a class="nav-link Four" id="L4">Contact Me</a>
-                </li>
-
-              </ul>
-          </div>
-          <!-- <ul class="navbar-nav ml-auto">
-
-            <li class="nav-link">
-                  <select class="badge badge-light select-remove-arrow">
-                      <option>EN</option>
-                      <option>AR</option>
-                  </select>
-              </li>
-
-            </ul> -->
-
-
-      </div>
-    </div>
-
-  </nav>
   <!-- align = up and down and center , justify-conent = right center left , for items -->
+  <html lang="<?php echo $config["lang"]?>" dir="<?php echo $config["dir"]?>">
+  <head>
+    <meta charset="utf-8">
+    <!-- des -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="http://localhost/ghzalyWebSite/css/rtlbootstrap.css"/>
+    <link rel="stylesheet" href="http://localhost/ghzalyWebSite/css/Design.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=New+Amsterdam&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c828d0f151.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Railway', 'Cairo', Arial, sans-serif !important;
+        }
+    </style>
+  </head>
+  <div class="loader-container">
+    <div class="cube">
+      <div class="side front"></div>
+      <div class="side back"></div>
+      <div class="side left"></div>
+      <div class="side right"></div>
+      <div class="side top"></div>
+      <div class="side bottom"></div>
+    </div>
+  </div>
   <main class="container-fluid w-100 main-design">
+    <nav class="navColor">
+        <button class="menu-toggle">☰</button>
+        <div class="nav-links">
+            <a href="#" class="nav-link active">Home</a>
+            <a href="#" class="nav-link">Projects</a>
+            <a href="#" class="nav-link">About</a>
+            <a href="#" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
    <div style="    display: grid;
     place-items: center;height: 25%;">
     <style>

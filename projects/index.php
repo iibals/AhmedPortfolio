@@ -1,4 +1,4 @@
-<?php include "../header.php"?>
+<?php include "../headElm.php"?>
 <title><?php echo $config["title"]?>Projects</title>
 <link rel="stylesheet" href="projects.css" />
 
@@ -7,9 +7,9 @@
             <h3 class="large-header text-white text-center mb-5" style="width:233px"> JquerySlider</h3>
           <div class="d-flex justify-content-center">
 
-            <button class="facebook-button"> <i class="fab fa-facebook-f"></i><span> Share</span> </button>
+            <!-- <button class="facebook-button"> <i class="fab fa-facebook-f"></i><span> Share</span> </button> -->
 
-            <button class="twitter-button"><i class="fab fa-twitter"></i><span> Tweet</span> </button>
+            <button class="twitter-button"><i class="fab fa-twitter"></i><span style="font-family: monospace;"> Tweet</span> </button>
 
                 </div>
           <section class="image-big-Square text-center" >

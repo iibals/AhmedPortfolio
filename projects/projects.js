@@ -99,3 +99,15 @@ $(document).ready(function() {
     // تهيئة العرض الشرائحي
     updateSlider();
 });
+$(document).ready(function() {
+  var currentUrl = window.location.href; // Automatically fetches the current page URL
+  var shareText = "Look at this creativity!"; // Text of the tweet
+    $('.twitter-button').click(function() {
+        var twitterUrl = `https://X.com/intent/tweet?text=${encodeURIComponent(shareText + " " + currentUrl)}`;
+        window.open(twitterUrl, '_blank'); // Opens Twitter in a new window
+    });
+  //   $('.facebook-button').click(function() {
+  //     var facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`;
+  //     window.open(facebookUrl, '_blank'); // Opens Facebook in a new window for sharing
+  // });
+});

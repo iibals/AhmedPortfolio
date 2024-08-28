@@ -40,7 +40,16 @@ $(document).ready(function() {
 
 
 
+$(document).ready(function(){
+    $('.menu-toggle').click(function(){
+        $('.nav-links').toggleClass('active');
+    });
 
+    $('.nav-link').click(function(){
+        $('.nav-link').removeClass('active');
+        $(this).addClass('active');
+    });
+});
 //-------------------------------
 
 var isFirefox = typeof InstallTrigger !== 'undefined';

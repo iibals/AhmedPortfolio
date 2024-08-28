@@ -1,7 +1,5 @@
 .Main-projects {
     overflow: hidden;
-    background-color: #0b0d18;
-    border-bottom: 1px solid #303039;
 }
 .Main-container {
     padding-top: 65px;
@@ -20,12 +18,13 @@
     padding: 3px;
     width: 81px;
     border-radius: 4px;
-
+    cursor: pointer;
     border: 1px solid #007bff;
 }
 .facebook-button {
     outline: none !important;
     text-decoration: none;
+    cursor: pointer;
     color: #fff;
     background-color: #3b5999;
     text-decoration: none !important;
@@ -38,7 +37,7 @@
     width: 100%;
     margin-top: 30px;
     position: relative;
-    height: 616px;
+    height: 637px;
 }
 .image-big-Square-title {
     padding: 9px;
@@ -218,7 +217,7 @@
     overflow-wrap: break-word;
     color: #fff;
     text-shadow: 0 0 3px black;
-    line-height: 1;
+    line-height: 11;
     font-weight: normal;
 }
 /* YouTube thumb edits */
@@ -285,7 +284,7 @@ iframe.ytp-chrome-top.ytp-show-cards-title, iframe.ytp-large-play-button, iframe
     position: absolute;
     bottom: 5px;
     width: 100%;
-    height: auto;
+    height: 100% !important;
     right: 0;
     left: 0;
     text-align: center;
@@ -293,11 +292,12 @@ iframe.ytp-chrome-top.ytp-show-cards-title, iframe.ytp-large-play-button, iframe
 .real-design-shadow-text {
     font-size: 23px;
     overflow-wrap: break-word;
-    line-height: 9;
+    line-height: 24;
     color: #fff;
     text-shadow: 0 0 3px black;
     font-weight: 100;
 }
+
 
 
 

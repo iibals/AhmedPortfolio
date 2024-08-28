@@ -1,36 +1,36 @@
-<?php include "../header.php" ?>
+<?php include "../headElm.php" ?>
 <link rel="stylesheet" href="projects-showcase.css"/>
-<title><?php $config["title"]?>Projects-Showcase </title>
+<title><?php echo $config["title"]?>Projects-Showcase </title>
   <body>
 
     <!-- start section -->
     <section
              class="text-center">
-            <h3 class="large-header text-white text-center mb-1 mt-4" style="width:233px"> معرض الاعمال </h3>
+              <h3 class="large-header">Porjects </h3>
             <div>
 
-            <div class="btn-group mb-5 mt-5 btn-group-toggle parentofRadio" data-toggle="buttons">
+            <div class="btn-group mb-5 mt-5 btn-group-toggle parentofRadio container" data-toggle="buttons">
 
-                <label class="btn btn-bgColor active Roption">
+                <label class="btn-bgColor active Roption">
                     <input type="radio"
                            name="options"
                            id="option1"
                            checked=""> Environment
                 </label>
 
-                <label class="btn btn-bgColor ">
+                <label class="btn-bgColor ">
                     <input type="radio"
                            name="options"
                            id="option2"> Characters
                 </label>
 
-                <label class="btn btn-bgColor Loption">
+                <label class="btn-bgColor Loption">
                     <input type="radio"
                            name="options"
                            id="option3"> Animation
                 </label>
 
-                <label class="btn btn-bgColor Loption">
+                <label class="btn-bgColor Loption">
                     <input type="radio"
                            name="options"
                            id="option4"> Miscellaneous
@@ -38,128 +38,281 @@
             </div>
 
             <div class="container-fluid gallery-container">
-              <div class="project-container">
-                <div class="gallery-box">
-                    <div class="gallery-img-parent">
-                        <div class="gallery-category">Digital Design</div>
-                        <img class="gallery-img" src="../images/CenterCharacter.jpg" alt="Project 1">
+              <div class="more-designs-show row">
+                    <div class="design-container col-2">
+                      <div class="design-category">UI Design</div>
+                        <img src="https://cdna.artstation.com/p/assets/images/images/024/538/058/20200226113541/smaller_square/ahmed-alghzaly-1.jpg?1582738541">
+                        <div class="design-shadow-box">
+                            <div class="text-shadow-box">
+                                <div class="text-shadow">
+                                    <span class="real-design-shadow-text">
+                                        Female character
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="gallery-dec-parent">
-                        <p>First Project</p>
-                        <span>A brief description of the first project and its key features</span>
+                    <div class="design-container col-2">
+                      <div class="design-category">UI Design</div>
+                        <img src="https://cdnb.artstation.com/p/assets/images/images/022/386/323/20200226120103/smaller_square/ahmed-alghzaly-1.jpg?1582740064">
+                        <div class="design-shadow-box">
+                            <div class="text-shadow-box">
+                                <div class="text-shadow">
+                                    <span class="real-design-shadow-text">
+                                        ELF
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="design-container col-2">
+                      <div class="design-category">Animation</div>
+                        <img src="https://cdna.artstation.com/p/assets/covers/images/024/538/508/smaller_square/ahmed-alghzaly-screenshot-8.jpg?1582739651">
+                        <div class="design-shadow-box">
+                            <div class="text-shadow-box">
+                                <div class="text-shadow">
+                                    <span class="real-design-shadow-text">
+                                        Tanjiro: Demon Slayer
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="design-container col-2">
+                      <div class="design-category">Miscellaneous</div>
+                        <img src="../images/theCube.png">
+                        <div class="design-shadow-box">
+                            <div class="text-shadow-box">
+                                <div class="text-shadow">
+                                    <span class="real-design-shadow-text">
+                                        Cube design
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="design-container col-2">
+                      <div class="design-category">Environment</div>
+                        <img src="https://cdna.artstation.com/p/assets/images/images/022/438/106/20191203230257/smaller_square/ahmed-alghzaly-1-4.jpg?1575435778">
+                        <div class="design-shadow-box">
+                            <div class="text-shadow-box">
+                                <div class="text-shadow">
+                                    <span class="real-design-shadow-text">
+                                        3D male character
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="design-container col-2">
+                      <div class="design-category">Character</div>
+                        <img src="https://cdnb.artstation.com/p/assets/images/images/024/538/737/20200226121144/smaller_square/ahmed-alghzaly-1.jpg?1582740704">
+                        <div class="design-shadow-box">
+                            <div class="text-shadow-box">
+                                <div class="text-shadow">
+                                    <span class="real-design-shadow-text">
+                                        Igris: Solo Leveling
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="design-container col-2">
+                      <div class="design-category">Character</div>
+                        <img src="https://cdnb.artstation.com/p/assets/images/images/024/538/737/20200226121144/smaller_square/ahmed-alghzaly-1.jpg?1582740704">
+                        <div class="design-shadow-box">
+                            <div class="text-shadow-box">
+                                <div class="text-shadow">
+                                    <span class="real-design-shadow-text">
+                                        Igris: Solo Leveling
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="design-container col-2">
+                      <div class="design-category">Character</div>
+                        <img src="https://cdnb.artstation.com/p/assets/images/images/024/538/737/20200226121144/smaller_square/ahmed-alghzaly-1.jpg?1582740704">
+                        <div class="design-shadow-box">
+                            <div class="text-shadow-box">
+                                <div class="text-shadow">
+                                    <span class="real-design-shadow-text">
+                                        Igris: Solo Leveling
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="design-container col-2">
+                      <div class="design-category">Character</div>
+                        <img src="https://cdnb.artstation.com/p/assets/images/images/024/538/737/20200226121144/smaller_square/ahmed-alghzaly-1.jpg?1582740704">
+                        <div class="design-shadow-box">
+                            <div class="text-shadow-box">
+                                <div class="text-shadow">
+                                    <span class="real-design-shadow-text">
+                                        Igris: Solo Leveling
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="design-container col-2">
+                      <div class="design-category">Character</div>
+                        <img src="https://cdnb.artstation.com/p/assets/images/images/024/538/737/20200226121144/smaller_square/ahmed-alghzaly-1.jpg?1582740704">
+                        <div class="design-shadow-box">
+                            <div class="text-shadow-box">
+                                <div class="text-shadow">
+                                    <span class="real-design-shadow-text">
+                                        Igris: Solo Leveling
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="design-container col-2">
+                      <div class="design-category">Character</div>
+                        <img src="https://cdnb.artstation.com/p/assets/images/images/024/538/737/20200226121144/smaller_square/ahmed-alghzaly-1.jpg?1582740704">
+                        <div class="design-shadow-box">
+                            <div class="text-shadow-box">
+                                <div class="text-shadow">
+                                    <span class="real-design-shadow-text">
+                                        Igris: Solo Leveling
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="design-container col-2">
+                      <div class="design-category">Character</div>
+                        <img src="https://cdnb.artstation.com/p/assets/images/images/024/538/737/20200226121144/smaller_square/ahmed-alghzaly-1.jpg?1582740704">
+                        <div class="design-shadow-box">
+                            <div class="text-shadow-box">
+                                <div class="text-shadow">
+                                    <span class="real-design-shadow-text">
+                                        Igris: Solo Leveling
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="design-container col-2">
+                      <div class="design-category">Character</div>
+                        <img src="https://cdnb.artstation.com/p/assets/images/images/024/538/737/20200226121144/smaller_square/ahmed-alghzaly-1.jpg?1582740704">
+                        <div class="design-shadow-box">
+                            <div class="text-shadow-box">
+                                <div class="text-shadow">
+                                    <span class="real-design-shadow-text">
+                                        Igris: Solo Leveling
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="design-container col-2">
+                      <div class="design-category">Character</div>
+                        <img src="https://cdnb.artstation.com/p/assets/images/images/024/538/737/20200226121144/smaller_square/ahmed-alghzaly-1.jpg?1582740704">
+                        <div class="design-shadow-box">
+                            <div class="text-shadow-box">
+                                <div class="text-shadow">
+                                    <span class="real-design-shadow-text">
+                                        Igris: Solo Leveling
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="design-container col-2">
+                      <div class="design-category">Character</div>
+                        <img src="https://cdnb.artstation.com/p/assets/images/images/024/538/737/20200226121144/smaller_square/ahmed-alghzaly-1.jpg?1582740704">
+                        <div class="design-shadow-box">
+                            <div class="text-shadow-box">
+                                <div class="text-shadow">
+                                    <span class="real-design-shadow-text">
+                                        Igris: Solo Leveling
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="design-container col-2">
+                      <div class="design-category">Character</div>
+                        <img src="https://cdnb.artstation.com/p/assets/images/images/024/538/737/20200226121144/smaller_square/ahmed-alghzaly-1.jpg?1582740704">
+                        <div class="design-shadow-box">
+                            <div class="text-shadow-box">
+                                <div class="text-shadow">
+                                    <span class="real-design-shadow-text">
+                                        Igris: Solo Leveling
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="design-container col-2">
+                      <div class="design-category">Character</div>
+                        <img src="https://cdnb.artstation.com/p/assets/images/images/024/538/737/20200226121144/smaller_square/ahmed-alghzaly-1.jpg?1582740704">
+                        <div class="design-shadow-box">
+                            <div class="text-shadow-box">
+                                <div class="text-shadow">
+                                    <span class="real-design-shadow-text">
+                                        Igris: Solo Leveling
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="design-container col-2">
+                      <div class="design-category">Character</div>
+                        <img src="https://cdnb.artstation.com/p/assets/images/images/024/538/737/20200226121144/smaller_square/ahmed-alghzaly-1.jpg?1582740704">
+                        <div class="design-shadow-box">
+                            <div class="text-shadow-box">
+                                <div class="text-shadow">
+                                    <span class="real-design-shadow-text">
+                                        Igris: Solo Leveling
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="design-container col-2">
+                      <div class="design-category">Character</div>
+                        <img src="https://cdnb.artstation.com/p/assets/images/images/024/538/737/20200226121144/smaller_square/ahmed-alghzaly-1.jpg?1582740704">
+                        <div class="design-shadow-box">
+                            <div class="text-shadow-box">
+                                <div class="text-shadow">
+                                    <span class="real-design-shadow-text">
+                                        Igris: Solo Leveling
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="design-container col-2">
+                      <div class="design-category">Character</div>
+                        <img src="https://cdnb.artstation.com/p/assets/images/images/024/538/737/20200226121144/smaller_square/ahmed-alghzaly-1.jpg?1582740704">
+                        <div class="design-shadow-box">
+                            <div class="text-shadow-box">
+                                <div class="text-shadow">
+                                    <span class="real-design-shadow-text">
+                                        Igris: Solo Leveling
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="design-container col-2">
+                      <div class="design-category">Character</div>
+                        <img src="https://cdnb.artstation.com/p/assets/images/images/024/538/737/20200226121144/smaller_square/ahmed-alghzaly-1.jpg?1582740704">
+                        <div class="design-shadow-box">
+                            <div class="text-shadow-box">
+                                <div class="text-shadow">
+                                    <span class="real-design-shadow-text">
+                                        Igris: Solo Leveling
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="gallery-box">
-                    <div class="gallery-img-parent">
-                        <div class="gallery-category">Programming</div>
-                        <img class="gallery-img" src="../images/Character.jpg" alt="Project 2">
-                    </div>
-                    <div class="gallery-dec-parent">
-                        <p>Second Project</p>
-                        <span>A brief description of the second project and its key features</span>
-                    </div>
-                </div>
-                <div class="gallery-box">
-                    <div class="gallery-img-parent">
-                        <div class="gallery-category">UI Design</div>
-                        <img class="gallery-img" src="../images/theCube.png" alt="Project 3">
-                    </div>
-                    <div class="gallery-dec-parent">
-                        <p>Third Project</p>
-                        <span>A brief description of the third project and its key features</span>
-                    </div>
-                </div>
-                <div class="gallery-box">
-                    <div class="gallery-img-parent">
-                        <div class="gallery-category">UI Design</div>
-                        <img class="gallery-img" src="../images/theCube.png" alt="Project 3">
-                    </div>
-                    <div class="gallery-dec-parent">
-                        <p>Third Project</p>
-                        <span>A brief description of the third project and its key features</span>
-                    </div>
-                </div>
-                <div class="gallery-box">
-                    <div class="gallery-img-parent">
-                        <div class="gallery-category">UI Design</div>
-                        <img class="gallery-img" src="../images/theCube.png" alt="Project 3">
-                    </div>
-                    <div class="gallery-dec-parent">
-                        <p>Third Project</p>
-                        <span>A brief description of the third project and its key features</span>
-                    </div>
-                </div>
-                <div class="gallery-box">
-                    <div class="gallery-img-parent">
-                        <div class="gallery-category">UI Design</div>
-                        <img class="gallery-img" src="../images/theCube.png" alt="Project 3">
-                    </div>
-                    <div class="gallery-dec-parent">
-                        <p>Third Project</p>
-                        <span>A brief description of the third project and its key features</span>
-                    </div>
-                </div>
-                <div class="gallery-box">
-                    <div class="gallery-img-parent">
-                        <div class="gallery-category">UI Design</div>
-                        <img class="gallery-img" src="../images/theCube.png" alt="Project 3">
-                    </div>
-                    <div class="gallery-dec-parent">
-                        <p>Third Project</p>
-                        <span>A brief description of the third project and its key features</span>
-                    </div>
-                </div>
-                <div class="gallery-box">
-                    <div class="gallery-img-parent">
-                        <div class="gallery-category">Digital Design</div>
-                        <img class="gallery-img" src="../images/CenterCharacter.jpg" alt="Project 1">
-                    </div>
-                    <div class="gallery-dec-parent">
-                        <p>First Project</p>
-                        <span>A brief description of the first project and its key features</span>
-                    </div>
-                </div>
-                <div class="gallery-box">
-                    <div class="gallery-img-parent">
-                        <div class="gallery-category">Digital Design</div>
-                        <img class="gallery-img" src="../images/CenterCharacter.jpg" alt="Project 1">
-                    </div>
-                    <div class="gallery-dec-parent">
-                        <p>First Project</p>
-                        <span>A brief description of the first project and its key features</span>
-                    </div>
-                </div>
-                <div class="gallery-box">
-                    <div class="gallery-img-parent">
-                        <div class="gallery-category">UI Design</div>
-                        <img class="gallery-img" src="../images/theCube.png" alt="Project 3">
-                    </div>
-                    <div class="gallery-dec-parent">
-                        <p>Third Project</p>
-                        <span>A brief description of the third project and its key features</span>
-                    </div>
-                </div>
-                <div class="gallery-box">
-                    <div class="gallery-img-parent">
-                        <div class="gallery-category">UI Design</div>
-                        <img class="gallery-img" src="../images/theCube.png" alt="Project 3">
-                    </div>
-                    <div class="gallery-dec-parent">
-                        <p>Third Project</p>
-                        <span>A brief description of the third project and its key features</span>
-                    </div>
-                </div>
-                <div class="gallery-box">
-                    <div class="gallery-img-parent">
-                        <div class="gallery-category">UI Design</div>
-                        <img class="gallery-img" src="../images/theCube.png" alt="Project 3">
-                    </div>
-                    <div class="gallery-dec-parent">
-                        <p>Third Project</p>
-                        <span>A brief description of the third project and its key features</span>
-                    </div>
-                </div>
-              </div>
             </div>
 
         </div>

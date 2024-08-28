@@ -31,3 +31,12 @@
     <div class="side bottom"></div>
   </div>
 </div>
+<nav class="navColor">
+    <button class="menu-toggle">☰</button>
+    <div class="nav-links">
+        <a href="#" class="nav-link active">Home</a>
+        <a href="#" class="nav-link">Projects</a>
+        <a href="#" class="nav-link">About</a>
+        <a href="#" class="nav-link">Contact</a>
+    </div>
+</nav>

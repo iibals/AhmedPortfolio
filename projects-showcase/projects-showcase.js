@@ -1,7 +1,11 @@
 $(document).ready(function() {
-    $('.gallery-box').hover(function() {
-        $(this).find('.gallery-category').fadeIn(200);
+    $('.design-container').hover(function() {
+        $(this).find('.design-category').fadeIn(200);
     }, function() {
-        $(this).find('.gallery-category').fadeOut(200);
+        $(this).find('.design-category').fadeOut(200);
+    });
+    $('.btn-bgColor').click(function() {
+        $('.btn-bgColor').removeClass('active');
+        $(this).addClass('active');
     });
 });

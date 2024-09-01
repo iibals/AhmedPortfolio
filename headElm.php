@@ -33,10 +33,9 @@
 </div>
 <nav class="navColor">
     <button class="menu-toggle">☰</button>
-    <div class="nav-links">
-        <a href="#" class="nav-link active">Home</a>
-        <a href="#" class="nav-link">Projects</a>
-        <a href="#" class="nav-link">About</a>
-        <a href="#" class="nav-link">Contact</a>
+    <div class="nav-links container">
+        <a href="http://localhost/ghzalyWebSite" class="nav-link active">Home</a>
+        <a href="http://localhost/ghzalyWebSite/projects" class="nav-link">Projects</a>
+        <a href="http://localhost/ghzalyWebSite#contact" class="nav-link">Contact</a>
     </div>
 </nav>

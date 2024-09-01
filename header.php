@@ -39,11 +39,10 @@
   <main class="container-fluid w-100 main-design">
     <nav class="navColor">
         <button class="menu-toggle">☰</button>
-        <div class="nav-links">
-            <a href="#" class="nav-link active">Home</a>
-            <a href="#" class="nav-link">Projects</a>
-            <a href="#" class="nav-link">About</a>
-            <a href="#" class="nav-link">Contact</a>
+        <div class="nav-links container">
+            <a href="http://localhost/ghzalyWebSite" class="nav-link active">Home</a>
+            <a href="projects" class="nav-link" target="_blank">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
         </div>
     </nav>
 
@@ -160,7 +159,7 @@
         <style>
 
         </style>
-        <a href="projects-gallery/" class="btn btn-lg greatbtn">
+        <a href="projects-showcase/" target="_blank" class="btn btn-lg greatbtn">
             <span>More Projects</span>
             <i class="fa fa-angle-double-left" aria-hidden="true"></i>
         </a>

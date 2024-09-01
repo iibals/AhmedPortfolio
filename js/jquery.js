@@ -137,10 +137,9 @@ $(".Three").on('click', function() {
     "use strict";
       window.scrollTo(0, 1570);
   });
-
-$(".Four").on('click', function() {
+$(".nav-lnik:last-child").on('click', function() {
     "use strict";
-      window.scrollTo(0, 1961);
+      window.scrollTo(0, 99999);
   });
 var btn = $('#myBtn');
 

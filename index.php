@@ -31,194 +31,35 @@
                   </h3>
               </div>
 
-
-
-              <div class="skills-showcase">
-                <div class="skills-container">
-                  <div class="skill-category">
-                    <h3>Design</h3>
-                    <ul class="skill-list">
-                      <li class="skill-item" data-skill="Adobe Photoshop">
-                        <span class="skill-name">Adobe Photoshop</span>
-                        <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
-                      </li>
-                      <li class="skill-item" data-skill="Adobe Illustrator">
-                        <span class="skill-name">Adobe Illustrator</span>
-                        <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
-                      </li>
-                      <li class="skill-item" data-skill="Sketch">
-                        <span class="skill-name">Sketch</span>
-                        <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
-                      </li>
-                    </ul>
+              <div class="container">
+                  <div class="sk">
+                      <h2>category skills1 </h2>
+                      <div class="icons">
+                          <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE2PRmJ?ver=cf0f" alt="CAD">
+                      </div>
                   </div>
-
-                  <div class="skill-category">
-                    <h3>Programming</h3>
-                    <ul class="skill-list">
-                      <li class="skill-item" data-skill="HTML5">
-                        <span class="skill-name">HTML5</span>
-                        <div class="skill-bar"><div class="skill-progress" style="width: 95%;"></div></div>
-                      </li>
-                      <li class="skill-item" data-skill="CSS3">
-                        <span class="skill-name">CSS3</span>
-                        <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
-                      </li>
-                      <li class="skill-item" data-skill="JavaScript">
-                        <span class="skill-name">JavaScript</span>
-                        <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
-                      </li>
-                    </ul>
+                  <div class="sk">
+                      <h2>category skills2 </h2>
+                      <div class="icons">
+                          <img src="https://e7.pngegg.com/pngimages/770/966/png-clipart-blender-computer-icons-rendering-blender-3d-computer-graphics-text.png" alt="3D Printing">
+                          <img src="https://e7.pngegg.com/pngimages/770/966/png-clipart-blender-computer-icons-rendering-blender-3d-computer-graphics-text.png" alt="3D Printing">
+                          <img src="https://e7.pngegg.com/pngimages/770/966/png-clipart-blender-computer-icons-rendering-blender-3d-computer-graphics-text.png" alt="3D Printing">
+                      </div>
                   </div>
-
-                  <div class="skill-category">
-                    <h3>Tools</h3>
-                    <ul class="skill-list">
-                      <li class="skill-item" data-skill="Git">
-                        <span class="skill-name">Git</span>
-                        <div class="skill-bar"><div class="skill-progress" style="width: 88%;"></div></div>
-                      </li>
-                      <li class="skill-item" data-skill="VS Code">
-                        <span class="skill-name">VS Code</span>
-                        <div class="skill-bar"><div class="skill-progress" style="width: 92%;"></div></div>
-                      </li>
-                      <li class="skill-item" data-skill="Webpack">
-                        <span the="skill-name">Webpack</span>
-                        <div class="skill-bar"><div class="skill-progress" style="width: 78%;"></div></div>
-                      </li>
-                    </ul>
+                  <div class="sk">
+                      <h2>category skills4 </h2>
+                      <div class="icons">
+                          <img src="https://play-lh.googleusercontent.com/xFXqt-xHyKht3CGi-kVR6szgoBxgQNr03XYG7rHyYFMVXGlrQrW99E84tOfFbSRrRQ" alt="Assembly and Fabrication">
+                      </div>
                   </div>
-                </div>
+                  <div class="sk">
+                      <h2>category skils3</h2>
+                      <div class="icons">
+                          <img src="https://cdn-icons-png.flaticon.com/512/7309/7309625.png" alt="SolidWorks">
+                      </div>
+                  </div>
               </div>
-              <style>
-                .skills-showcase {
-                    max-width: 1000px;
-                    margin: 0 auto;
-                    padding: 40px 20px;
-                    border-radius: 20px;
-                }
-
-                .skills-title {
-                  text-align: center;
-                  color: #ffffff;
-                  font-size: 2.5em;
-                  margin-bottom: 40px;
-                  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-                }
-
-                .skills-container {
-                  display: flex;
-                  flex-wrap: wrap;
-                  justify-content: space-around;
-                }
-
-                .skill-category {
-                  flex-basis: calc(33.333% - 40px);
-                  margin-bottom: 40px;
-                }
-
-                .skill-category h3 {
-                  color: #3498db;
-                  font-size: 1.8em;
-                  margin-bottom: 20px;
-                  text-align: center;
-                  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-                }
-
-                .skill-list {
-                  list-style: none;
-                  padding: 0;
-                }
-
-                .skill-item {
-                  background: rgba(255, 255, 255, 0.1);
-                  border-radius: 10px;
-                  padding: 15px;
-                  margin-bottom: 15px;
-                  transition: all 0.3s ease;
-                  opacity: 0;
-                  transform: translateY(20px);
-                  transition: opacity 0.5s ease, transform 0.5s ease;
-                }
-
-                .skill-item:hover {
-                  transform: translateY(-5px) !important;
-                  box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
-                }
-
-                .skill-name {
-                  display: block;
-                  color: #ecf0f1;
-                  font-size: 1.1em;
-                  margin-bottom: 10px
-                }
-
-                .skill-bar {
-                  height: 10px;
-                  display: none;
-                  background: rgba(255, 255, 255, 0.2);
-                  border-radius: 5px;
-                  overflow: hidden;
-                }
-
-                .skill-progress {
-                  height: 100%;
-                  background: linear-gradient(90deg, #3498db, #2ecc71);
-                  border-radius: 5px;
-                  transition: width 1s ease-in-out;
-                }
-                .skill-icon {
-                  font-size: 2em; /* Adjust the size of icons */
-                  color: #ccc; /* Default color */
-                }
-
-                .active-skill {
-                  color: #2ecc71; /* Color when active */
-                }
-
-                @media (max-width: 768px) {
-                  .skill-category {
-                    flex-basis: 100%;
-                  }
-                }
-
-            </style>
-
-            <script>
-            document.addEventListener('DOMContentLoaded', (event) => {
-              const skillItems = document.querySelectorAll('.skill-item');
-
-              const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                  if (entry.isIntersecting) {
-                    entry.target.style.opacity = 1;
-                    entry.target.style.transform = 'translateY(0)';
-                  }
-                });
-              }, { threshold: 0.5 });
-
-              skillItems.forEach(item => {
-                observer.observe(item);
-              });
-
-              skillItems.forEach(item => {
-                item.addEventListener('mouseenter', () => {
-                  const icons = item.querySelectorAll('.skill-icon');
-                  icons.forEach(icon => icon.classList.add('active-skill'));
-                });
-
-                item.addEventListener('mouseleave', () => {
-                  const icons = item.querySelectorAll('.skill-icon');
-                  icons.forEach(icon => icon.classList.remove('active-skill'));
-                });
-              });
-            });
-            </script>
-
-
-
-
-
+            </div>
               </div>
       </div>
 
@@ -388,6 +229,7 @@
                   <div class="timeline-date">2022</div>
                 </div>
               </div>
+              <!---->
             </div>
 
             <script>

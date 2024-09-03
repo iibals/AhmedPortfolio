@@ -8,31 +8,19 @@ window.addEventListener('load', function() {
 });
 //-- start swiper
 $(document).ready(function() {
-    var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 'auto',
-        spaceBetween: 30, // هذا سيضع 30 بكسل بين الشرائح
-        loop: true,
-        autoplay: {
-            delay: 0,
-            disableOnInteraction: false,
-        },
-        speed: 5000,
-        allowTouchMove: false,
-        on: {
-            init: function () {
-                this.el.addEventListener('mouseenter', function () {
-                    swiper.autoplay.stop();
-                    swiper.params.speed = 15000;
-                    swiper.autoplay.start();
-                });
-                this.el.addEventListener('mouseleave', function () {
-                    swiper.autoplay.stop();
-                    swiper.params.speed = 5000;
-                    swiper.autoplay.start();
-                });
-            }
-        }
-    });
+  // Select the swiper-container element
+  var swiperContainer = $('.custom-swiper-container')[0];
+
+  // Add hover event listeners
+  $(swiperContainer).on('mouseover', function() {
+    // Pause autoplay on hover
+    swiperContainer.swiper.autoplay.stop();
+  });
+
+  $(swiperContainer).on('mouseout', function() {
+    // Resume autoplay when mouse leaves
+    swiperContainer.swiper.autoplay.start();
+  });
 });
 
 
@@ -213,11 +201,10 @@ $(document).ready(function() {
   var headerElement = $('#typingHeader');
   var spanElement = $('#typingSpan');
   var texts = [
-    ['Welcome to Portfolio ', 'I am Ahmed alghzali'],
-    ['Working as                 ', '3D designer since 2017']
+    ['Welcome to Portfolio ', '3D designer'],
+    ['Working as                 ', 'Mechanical Engineer']
   ];
-
-  typeEffect(headerElement, spanElement, texts, 150, 6000, 150);
+  typeEffect(headerElement,spanElement, texts, 150, 6000, 150);
 });
 // end typing
 // start follow mouse effect

@@ -167,7 +167,7 @@ html {
 
 .menu-toggle {
     display: none;
-    background-color: #9cff33;
+    background-color: #27ae60;
     border: none;
     padding: 10px;
     border-radius: 24px;
@@ -277,11 +277,12 @@ html {
     border-bottom: 0px;
     text-align: center;
     height: 109vh;
+    overflow: hidden;
     object-fit: cover;
     background-image: url(http://localhost/ghzalyWebSite/images/theCube.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-color: #000;
 }
 .main-design:after {
   content:"";
@@ -537,6 +538,7 @@ html {
 .AboutSection {
     position: relative;
     padding: 55px 0 68px 0;
+    box-shadow: 0px 0px 20px 0px #0101014f;
     color: #FFF;
 }
 .About-div {
@@ -634,19 +636,22 @@ html {
 .AboutH3 {
     color: inherit;
     position: relative;
+    z-index: 3;
+    font-weight: bold;
     font-family: 'El Messiri', sans-serif;
     display: inline;
-    font-size: 34px;
+    font-size: 30px;
 }
 .AboutSpan {
-    color: inherit;
-    border: none !important;
-    font-size: 18px;
-    position: relative;
-    display: inline-block;
+    font-size: 26px;
+    margin-left: 5%;
+    font-family: 'El Messiri';
+    text-shadow: 0 0 0px #ffffff8c;
+    color: #80808096;
+    display: inline;
 }
 .typing-effect {
-    border-right: 2px solid white; /* Border effect */
+    border-right: 1px solid #6a7177; /* Border effect */
     padding-right: 5px;
     animation: blink-caret 1.25s step-end infinite;
 }

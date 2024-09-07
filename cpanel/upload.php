@@ -85,12 +85,15 @@
 
               </div>
 
-                    <div class="dragDropParent"></div>
+            <form action="" method="POST">
+                <div class="dragDropParent"></div>
 
+                <button type="submit" class="btn btn-lg greatbtn">
+                  <span>Upload</span>
+                  <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+                </button>
+            </form>
 
-                    </div>
-              <button class="Big-button f-button ghzaly-black-button "> See it </button>
-              <button class="Big-button s-button ghzaly-success-button "> Publish </button>
           </div>
 
       </div>
@@ -161,7 +164,7 @@ $(document).ready(function() {
                                     <span class="images-span-title">${width}x${height}</span>
                                 </span>
                                 <div class="video-or-image">
-                                    <img class="images-uploaded-img" src="${imgSrc}">
+                                    <img id="imgU" class="images-uploaded-img" src="${imgSrc}">
                                 </div>
                                 <span class="images-span-icon">
                                     <i class="far fa-trash-alt" aria-hidden="true"></i>
@@ -170,8 +173,8 @@ $(document).ready(function() {
                             <section class="section-titles">
                                 <input class="login-input w-100" placeholder="Image title/description" />
                                 <select class="select-cont w-100">
-                                    <option value="1">Full width</option>
-                                    <option value="2">Vertically</option>
+                                    <option value="fullwidth">Full width</option>
+                                    <option value="Vertically">Vertically</option>
                                 </select>
                             </section>
                         </article>
@@ -225,7 +228,7 @@ $(document).ready(function() {
                                 <span class="images-span-title">YouTube Video</span>
                             </span>
                             <div class="video-or-image">
-                                <iframe class="images-uploaded-img" src="${embedUrl}" allowfullscreen></iframe>
+                                <iframe id="videoU" class="images-uploaded-img" src="${embedUrl}" allowfullscreen></iframe>
                             </div>
                             <span class="images-span-icon">
                                 <i class="far fa-trash-alt" aria-hidden="true"></i>
@@ -233,9 +236,9 @@ $(document).ready(function() {
                         </header>
                         <section class="section-titles">
                             <input class="login-input w-100" placeholder="Video title/description" />
-                            <select class="select-cont w-100">
-                                <option value="1">Full width</option>
-                                <option value="2">Vertically</option>
+                            <select class="select-cont w-100 " disabled>
+                                <option value="fullwidth">Full width</option>
+                                <option value="Vertically">Vertically</option>
                             </select>
                         </section>
                     </article>

@@ -1,6 +1,5 @@
 .Main-add-images {
     overflow: hidden;
-    padding: 0px 0px 100px 0px;
     position: relative;
 }
 .large-header {
@@ -94,7 +93,7 @@
 /* images */
 .dragDropParent {
     overflow-y: auto;
-    height: 553px;
+    min-height: 300px;
     direction: ltr;
 }
 .dragDropParent::-webkit-scrollbar-thumb {

@@ -7,11 +7,11 @@
 <div class="Main-login container-fluid">
     <h1 class="large-header mb-4 text-center">Control panel</h1>
       <div class="container big-Cont p-0" id="remoteCont">
-          <div data-file="inputs.php" class="remote active" id="fill">inputs</div>
-          <div data-file="upload.php" class="remote" id="upload">Upload</div>
+          <div data-file="inputs.php" class="remote" id="fill">inputs</div>
+          <div data-file="upload.php" class="remote active" id="upload">Upload</div>
           <div data-file="manage.php" class="remote" id="mng">Manage</div>
           <section class="container-fluid text-center text-white p-0 Section-login" id="fileDisplay">
-            <?php include "inputs.php" ?>
+            <?php include "upload.php" ?>
           </section>
           </div>
         </div>

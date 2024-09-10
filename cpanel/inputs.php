@@ -1,18 +1,6 @@
 <section class="container-fluid text-center text-white p-0 Section-login">
     <div class="container Cont-login">
         <div class="Close_Cont">
-          <script>
-          function validateForm() {
-              var inputs = document.querySelectorAll('input[type="text"]');
-              for (var i = 0; i < inputs.length; i++) {
-                  if (inputs[i].value.includes('<script>') || inputs[i].value.includes('</script>')) {
-                      alert('Invalid input detected!');
-                      return false;
-                  }
-              }
-              return true;
-          }
-          </script>
 
         <form>
 
@@ -67,11 +55,16 @@
                     $stmt->close();
                 }
             }
+            // تنفيذ الاستعلام مباشرة عند تحميل الصفحة
+            $query = "SELECT instagram, facebook, twitter, linkedin, tiktok FROM social_links ORDER BY id DESC LIMIT 1";
 
-            if (isset($_GET['success']) && $_GET['success'] == 1) {
-                // Fetch the last inserted data
-                $query = "SELECT instagram, facebook, twitter, linkedin, tiktok FROM social_links ORDER BY id DESC LIMIT 1";
-                $result = $conn->query($query);
+            // تحضير الاستعلام لاستخدام الـ Prepared Statements
+            if ($stmt = $conn->prepare($query)) {
+                // تنفيذ الاستعلام
+                $stmt->execute();
+
+                // جلب النتائج
+                $result = $stmt->get_result();
 
                 if ($result->num_rows > 0) {
                     $row = $result->fetch_assoc();
@@ -80,11 +73,17 @@
                     $twitter = $row['twitter'];
                     $linkedin = $row['linkedin'];
                     $tiktok = $row['tiktok'];
+
+                    // يمكنك الآن استخدام البيانات كما تريد
                 } else {
                     echo "No results found.";
                 }
+
+                // إغلاق الـ Statement
+                $stmt->close();
+            } else {
+                echo "Error in preparing the statement.";
             }
-            $conn->close();
             ?>
 
 

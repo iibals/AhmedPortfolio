@@ -1,6 +1,20 @@
 <link rel="stylesheet" href="css/upload.css">
 <style>
+<?php
 
+  $servername = "localhost";
+  $username = "root";
+  $password = "";
+  $dbname = "ahmedDb";
+
+  // Create connection
+  $conn = new mysqli($servername, $username, $password, $dbname);
+  // Check connection
+  if ($conn->connect_error) {
+      die("Connection failed: " . $conn->connect_error);
+  }
+
+?>
 /* .big-Cont {
   height: 1650px;
 } */

@@ -1,4 +1,5 @@
-<?php include "../headElm.php"?>
+<?php include "../headElm.php";
+?>
 <title><?php echo $config["title"] ?>cPanel</title>
 <link rel="stylesheet" href="css/cpanel.css" />
 <link rel="stylesheet" href="css/upload.css" />
@@ -7,8 +8,8 @@
 <div class="Main-login container-fluid">
     <h1 class="large-header mb-4 text-center">Control panel</h1>
       <div class="container big-Cont p-0" id="remoteCont">
-          <div data-file="inputs.php" class="remote" id="fill">inputs</div>
-          <div data-file="upload.php" class="remote active" id="upload">Upload</div>
+          <div data-file="inputs.php" class="remote inputs" id="fill">inputs</div>
+          <div data-file="upload.php" class="remote" id="upload">Upload</div>
           <div data-file="manage.php" class="remote" id="mng">Manage</div>
           <section class="container-fluid text-center text-white p-0 Section-login" id="fileDisplay">
             <?php include "upload.php" ?>
@@ -54,3 +55,6 @@ $("#remoteCont .remote").on('click', function(){
 })
 
 </script>
+<?php
+$conn->close();
+ ?>

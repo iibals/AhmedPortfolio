@@ -1023,6 +1023,7 @@ containerEditWidth {
 #myBtn:active {
     color:#333;
 }
+/* greatbtn changes check before copy it like a dumb ass */
 .greatbtn {
     display: inline-flex;
     align-items: center;
@@ -1040,7 +1041,7 @@ containerEditWidth {
     margin-bottom: 20px;
 }
 .greatbtn:hover {
-    color: #030303 ;
+    color: #030303;
 }
 .greatbtn:active {
     background-color: rgb(255 255 255 / 0.4) ;
@@ -1048,16 +1049,17 @@ containerEditWidth {
 .greatbtn i {
     transform: translateY(-400%);
     transition: transform 0.5s ease;
-    margin-right: 8px;
+    margin-right: 0px !important;
 }
 
 .greatbtn:hover i {
     transform: translateX(0);
+    display: block;
 }
 
 .greatbtn span {
     transition: all 0.5s ease;
-    margin-right: 8px;
+    margin-right: -16px ;
 }
 
 .greatbtn:hover span {

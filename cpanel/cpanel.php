@@ -1,4 +1,5 @@
 <?php include "../headElm.php";
+      include "../jsfiles.php";
 ?>
 <title><?php echo $config["title"] ?>cPanel</title>
 <link rel="stylesheet" href="css/cpanel.css" />
@@ -16,7 +17,6 @@
           </section>
           </div>
         </div>
-<?php include "../jsfiles.php"?>
 
 <script>
 
@@ -55,6 +55,3 @@ $("#remoteCont .remote").on('click', function(){
 })
 
 </script>
-<?php
-$conn->close();
- ?>
